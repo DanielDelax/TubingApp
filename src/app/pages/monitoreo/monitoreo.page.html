@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<ion-content>
+  
+<ion-card>
+  <img src="assets/img/water.png"/>
+  <ion-card-content>
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<ion-list>
+<ion-title style="font-weight: bold;font-family: 'Poppins', sans-serif;" class="style">Encencido automático</ion-title>
+<ion-item>
+  <ion-label style="font-weight: bold;font-family: 'Poppins', sans-serif;">Habilitar función</ion-label>
+  <ion-toggle [(ngModel)]="toggleValue2"  (click)="send_data2()" disabled="{{disableIns}}"mode="ios"></ion-toggle>
+</ion-item>
+</ion-list>
+
+<p *ngIf="toggleValue2" class="ion-text-center" style="font-family: 'Poppins', sans-serif;">Función habilitada</p>
+</ion-card-content>
+</ion-card>
+
+
+
+<!--
+<ion-card class="welcome-card">
+  <ion-card-header>
+    <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
+    <ion-card-title>Game of Thrones</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <canvas #barChart></canvas>
+  </ion-card-content>
+</ion-card>
+-->
+</ion-content>

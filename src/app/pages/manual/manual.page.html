@@ -1,0 +1,21 @@
+<app-header></app-header>
+<ion-content>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <ion-card>
+    <img src="assets/img/plant.png"/>
+    <ion-card-content>
+      
+  <ion-list>
+  <ion-title class="style" style="font-weight: bold;font-family: 'Poppins', sans-serif;">Encencido manual</ion-title>
+  <ion-item>
+    <ion-label style="font-weight: bold;font-family: 'Poppins', sans-serif;">Encender dispositivo</ion-label>
+    <ion-toggle [(ngModel)]="toggleValue" (click)="send_data()" disabled="{{disablePin}}" (ionChange)="toggle('M')" mode="ios"></ion-toggle>
+  </ion-item>
+</ion-list>
+
+  <p *ngIf="toggleValue" class="ion-text-center" style="font-family: 'Poppins', sans-serif;">El dispositivo ha sido encendido.</p>
+</ion-card-content>
+</ion-card>
+
+</ion-content>

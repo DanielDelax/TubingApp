@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+
+<ion-content>
+   <div class="center">
+    <ion-slides #slides pager="true" [options]="slideOpts">
+      <ion-slide class="step-one">
+        <img margintop20 src="../../assets/slider/img1.png"/>
+          <p class="my-label">Bienvenido a Tubbing-App</p>
+      </ion-slide>
+
+      <ion-slide class="step-one">
+        <img margintop20 src="../../assets/slider/garden.png"/>
+          <p class="my-label">Sistema de riego para la preservación de áreas verdes </p>
+          <br>
+         
+      </ion-slide>
+
+     
+
+    </ion-slides>
+
+    <ion-button color="primary" routerLink="/menu" style="margin-top: 10px;">
+      <div class="parent">{{buttonName}}</div>
+    </ion-button>
+
+
+  </div>
+</ion-content>

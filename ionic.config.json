@@ -1,0 +1,7 @@
+{
+  "name": "tubing-appv2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
